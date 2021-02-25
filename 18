@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero, fatorial, resultado = 1
+          cadeia texto = "" 
+
+          escreva ("Insira um número a ser fatorado: ")
+          leia (numero)
+
+          para (fatorial = numero; fatorial >= 1; fatorial--)
+{
+          se(fatorial == 1){
+          texto = texto + fatorial
+          }senao{
+          texto = texto + fatorial + "x"
+    }
+
+          resultado = resultado * fatorial
+}
+
+          escreva (numero, "! = ", texto, " = ", resultado)
+		
+	}
+}
